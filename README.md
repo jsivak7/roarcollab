@@ -1,4 +1,4 @@
-# Penn State Roar Collab HPC
+# psu-roarcollab
 
 Information about the Penn State Roar Collab HPC
 
