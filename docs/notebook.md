@@ -1,5 +1,8 @@
 # Penn State Roar Collab - Notebook
 
+## 2024.03.16
+Restructed project following learning from Minneault2022 and other resources for proper file organization. Going to use consistent file hierarchy across all projects using https://github.com/patrickmineault/true-neutral-cookiecutter template
+
 ## 2024.02.03
 Started working on scaling testing for the ROAR Collab system, as I had not done this explicitly since we moved from the ROAR system. This is not meant to be comprehensive, but more so just to optimize my calculations moving forward as much as possible with simple rules
 
