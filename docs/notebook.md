@@ -3,6 +3,9 @@
 ## 2024.03.16
 Restructed project following learning from Minneault2022 and other resources for proper file organization. Going to use consistent file hierarchy across all projects using https://github.com/patrickmineault/true-neutral-cookiecutter template
 
+Wrote script to extract all ncore values from both systems evaluated (NiOconv2x2x2 and NiOconv4x2x2)
+
+
 ## 2024.02.03
 Started working on scaling testing for the ROAR Collab system, as I had not done this explicitly since we moved from the ROAR system. This is not meant to be comprehensive, but more so just to optimize my calculations moving forward as much as possible with simple rules
 
@@ -13,6 +16,7 @@ I confirmed that you can run up to 60 cores/node for basic, and 48 cores/node fo
 
 Initial testing is just with MgO non-magnetic with PBE since this is quite cheap.
 
+
 ## 2024.02.05
 Seems to be alot of instability in the calculation using 60 cores/node on basic, so I am going to stick with a max of 48 cores/node for both basic and standard cores moving forward
 
@@ -20,13 +24,14 @@ Going to revamp this since I have made a few mistakes trying to shift things aro
 
 Using 'full' kmesh for the NiO2x2x2 scaling (which is a kmesh of 3x3x3), going to redo all of these and delete older calculations since I am not sure if the 2x2x2 kmesh is applicable really
 - the larger 128-atom supercell I will test in the future, but not for the time being since I need to finish this up and get doing other things
+
 --> all submitted for both basic and standard, going to work on open as well for the time being since these may be different than the standard since they are 'icelake' cores
 
 Will wait to get all of the data, but the 'icelake' processors seem to be MUCH faster than the default standard cores
 - seems that a constraint can be added for standard core jobs as well to only use the icelake processors
 --> to compare these, I will plot the total calculation time between the different type of processors
-
 **> scontrol show node (shows the details of all the nodes you can use with slurm)**
+
 
 ## 2024.02.06
 Starting to finally be able to come up with some general guidelines for my VASP calculations
