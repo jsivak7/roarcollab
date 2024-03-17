@@ -7,6 +7,7 @@ def repo_update():
     os.system("git commit -a -m '{}'".format(date.today()))
     os.system("git push")
 
+
 def plot_data(dataframe, allocations, resultspath):
     """
     Plots updated allocation balances
