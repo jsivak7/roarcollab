@@ -5,6 +5,8 @@ Restructed project following learning from Minneault2022 and other resources for
 
 Wrote script to extract all ncore values from both systems evaluated (NiOconv2x2x2 and NiOconv4x2x2)
 
+NCORE = 16 is used for all calculations for KPAR scaling testing as it was found to generally be the highest speed up for max #cores/node for all hardware considered.
+- NOTE that only considering KPAR = # kpoints and KPAR = 1 for comparison purposes
 
 ## 2024.02.03
 Started working on scaling testing for the ROAR Collab system, as I had not done this explicitly since we moved from the ROAR system. This is not meant to be comprehensive, but more so just to optimize my calculations moving forward as much as possible with simple rules

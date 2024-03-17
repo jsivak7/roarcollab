@@ -1,6 +1,6 @@
 # psu-roarcollab
 
-Information about the Penn State Roar Collab HPC
+Information about the Penn State Roar Collab HPC. Useful for tracking Sinnott group and MRSEC IRG2 allocation balances, available hardware, and VASP scaling performance.
 
 ## Allocation Balances
 ![plot](/results/alloc_balances.png)
