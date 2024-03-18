@@ -11,3 +11,4 @@ Information about the Penn State Roar Collab HPC. Useful for tracking Sinnott gr
 |*sapphirerapids*   |basic      |64         |255                |3.98               |open, sla-prio, burst  |
 |*icelake*          |standard   |48         |500                |10.42              |open, sla-prio, burst  |
 |*cascadelake*      |standard   |48         |350                |7.29               |open, sla-prio, burst  |
+

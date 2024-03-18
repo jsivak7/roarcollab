@@ -15,7 +15,7 @@ for system in systems:
         plt.plot(data.num_nodes, data.kparnodes, label=hardware_type, marker='s')
     plt.xlabel("# nodes")
     plt.ylabel("cpu time (sec)")
-    plt.title(f" {system} ({hardware_type})", weight='bold')
+    plt.title(f"{system}", weight='bold')
     plt.legend(title='KPAR', loc='center left', bbox_to_anchor=(1, 0.5))
     plt.grid(alpha=0.1)
     plt.tight_layout()
