@@ -33,7 +33,7 @@ def plot_data(dataframe, allocations, resultspath):
         plt.grid(visible=True, alpha = 0.25, axis='y')
         plt.ticklabel_format(style='plain', axis='y')
         
-        plt.title(f"as of {date.today().strftime('%a %b %d, %Y')}")
+        plt.title(f"as of {date.today().strftime('%A %b %d, %Y')}")
         plt.xlabel("Time")
         plt.ylabel('CPU Hours')
         plt.tight_layout()
