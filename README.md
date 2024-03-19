@@ -3,6 +3,8 @@
 Information about the Penn State Roar Collab HPC. Useful for tracking Sinnott group and MRSEC IRG2 allocation balances, available hardware, and VASP scaling performance.
 
 ## Allocation Balances
+Tracking began on December 12, 2023
+
 ![plot](/results/alloc_balances.png)
 
 ## Available Hardware
