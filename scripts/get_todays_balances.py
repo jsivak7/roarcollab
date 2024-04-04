@@ -1,4 +1,4 @@
-from psu_roarcollab.allocation_balances import check_date,get_todays_data,plot_data,repo_update
+from roarcollab.allocation_balances import check_date,get_todays_data,plot_data,repo_update
 from datetime import date
 import os
 
