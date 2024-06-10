@@ -22,4 +22,3 @@ if check_date() == False:
     plot_data(updated_alloc_df,allocations,"../results/")
     os.chdir('../')
     repo_update()
-    print("\nSuccess!\n")

@@ -3,7 +3,7 @@ def repo_update():
     import os
     from datetime import date
 
-    print("\nCommitting and pushing updated allocation balances...")
+    #print("\nCommitting and pushing updated allocation balances...")
     os.system("git commit -a -m '{}'".format(date.today()))
     os.system("git push")
 
@@ -25,7 +25,7 @@ def plot_data(dataframe, allocations, resultspath):
     plt.rcParams['font.size'] = 12
     plt.rcParams['axes.linewidth'] = 1.25
 
-    print("\nPlotting updated allocation balances...")
+    #print("\nPlotting updated allocation balances...")
 
     for allocation in allocations:
         plt.plot(np.arange(len(dataframe['date'])), dataframe[allocation], label=allocation)
@@ -57,13 +57,13 @@ def get_todays_data(allocations, datapath):
     from datetime import date
     import pandas as pd
 
-    print(f"\nCollecting allocation balances for today ({date.today()})...\n")
+    #print(f"\nCollecting allocation balances for today ({date.today()})...\n")
     new_alloc_data = {'date': date.today()}
     alloc_df = pd.read_csv(datapath)
 
     for allocation in allocations:
         balance = _get_alloc_data(allocation)
-        print(f"{allocation} \t-> {balance} cpu hours")
+        #print(f"{allocation} \t-> {balance} cpu hours")
         new_alloc_data[allocation] = [balance]
 
     new_alloc_df = pd.concat([alloc_df, pd.DataFrame(new_alloc_data)])
@@ -108,7 +108,7 @@ def check_date():
     with open("../docs/last_alloc_collect_date") as f:
         last_extract_date = f.readline()
         if today == last_extract_date:
-            print(f"\nAllocation data has already been extracted for today ({today})...\n")
+            #print(f"\nAllocation data has already been extracted for today ({today})...\n")
             return True
         else:
             return False
