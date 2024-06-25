@@ -14,10 +14,12 @@ Tracking began on December 12, 2023
 |*icelake*          |standard   |48         |500                |10.42              |open, sla-prio, burst  |
 |*cascadelake*      |standard   |48         |350                |7.29               |open, sla-prio, burst  |
 
-The `IceLake` standard cores should be used preferably over the `CascadeLake` in most cases for VASP calculations, as the NiO scaling calculations were almost always less time when using the `IceLake` standard cores:
+The `IceLake` standard cores should be used preferably over the `CascadeLake` for VASP calculations on only a single node or a small amounto of node, as the NiO scaling calculations were almost always less time when using the `IceLake` standard cores:
 ![plot](./results/kpar_times_allNiO.png)
 
 Some research on the different Intel codenames would indicate that the `IceLake` series is newer than `CascadeLake`, so these findings make sense. The `IceLake` hardware can be called using `--constraint = icelake` in the slurm submission script.
+
+When one is using a large number of nodes however (10+ nodes), it seems that the `CascadeLake` cores perform much better from my experience and should be used preferably for calculations that require a heavier amount of scaling.
 
 ## VASP General Scaling Rules
 1. Use all of the cores/node available unless running relatively 'small' calculations (< ~20 atoms)
