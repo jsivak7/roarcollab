@@ -7,7 +7,7 @@ allocations = [
     "sbs5563_bc",
     "sbs5563_sc",
     "ixd4_n_bc",
-    "ixd4_t_sc",
+#    "ixd4_t_sc",
     "ixd4_s_sc",
 ]
 
