@@ -1,5 +1,8 @@
 # psu-roarcollab
 
+**DEPRECIATED** as PSU Roar Collab no longer allows tracks the CPU time in this manner for SLAs.
+- the different CPU performance may still be useful, however
+
 Information about the Penn State Roar Collab HPC. Useful for tracking Sinnott group and MRSEC IRG2 allocation balances, available hardware, and VASP scaling performance.
 
 ## Allocation Balances
