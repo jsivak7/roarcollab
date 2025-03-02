@@ -2,3 +2,4 @@
 __pycache__/
 calcs/
 old/
+.DS_Store
